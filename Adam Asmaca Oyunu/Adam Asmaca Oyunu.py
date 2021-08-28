@@ -19,7 +19,7 @@ while True:
         elif y not in kelime:   #Girilen harf kelime içinde yoksa yanlış bir değer girdiğini söylüyoruz.
             print("Yanlış Tahmin!")
         else:
-            for i in range(len(kelime)):#Girilen harf kelime içerisinde değilse yanlış tahmin olduğunu sözlyüyoruz. 
+            for i in range(len(kelime)):#Girilen harf kelime içerisinde değilse yanlış tahmin olduğunu söylüyoruz. 
                 if y == kelime[i]:
                     print("Doğru Tahmin!")
                     z[i] = y
