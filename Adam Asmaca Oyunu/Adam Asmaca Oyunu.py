@@ -6,6 +6,7 @@ while True:
     harfler = [] # Kullanıcının girdiği tüm harfleri bu listeye ekleyerek tekrar değer girdiği zaman uyarı vermesi sağlanacak.
     x = len(kelime) #Seçilen kelimenin uzunluğunu belirtip x değerinin içine atıyoruz.
     z = list('_' * x) # X uzunluğu kadar "_" ekliyoruz.
+    print("---------- Adam Asmaca Oyunu ----------")
     print(' '.join(z), end='\n') #Alt tireler arasına boşluk ekliyoruz.
     while tahminSayisi > 0:
         y = input("Bir harf tahmin edin : ")
@@ -19,13 +20,13 @@ while True:
         elif y not in kelime:   #Girilen harf kelime içinde yoksa yanlış bir değer girdiğini söylüyoruz.
             print("Yanlış Tahmin!")
         else:
-            for i in range(len(kelime)):#Girilen harf kelime içerisinde değilse yanlış tahmin olduğunu söylüyoruz. 
+            for i in range(len(kelime)):#Girilen harf kelime içerisinde ise doğru tahmin olduğunu söylüyoruz. 
                 if y == kelime[i]:
                     print("Doğru Tahmin!")
                     z[i] = y
                     harfler.append(y)
             print(' '.join(z), end='\n')
-        if y not in kelimeler:# Tahmin sayısına göre adamı asıyoruz.
+        if y not in kelime:# Girilen harfin kelime içerisinde olup olmadığını kontrol ediyoruz.
             tahminSayisi = tahminSayisi - 1
             if tahminSayisi == 9:
                 print("9 hakkınız kaldı!")
