@@ -38,7 +38,7 @@ while True:
                 print("     |")
                 print("     O      ")
             if tahminSayisi == 7:
-                print("7 hakkaınız kaldı!")
+                print("7 hakkınız kaldı!")
                 print("  --------  ")
                 print("     |      ")
                 print("     O      ")
