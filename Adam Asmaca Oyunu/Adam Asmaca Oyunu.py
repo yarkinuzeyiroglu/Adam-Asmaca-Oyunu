@@ -100,11 +100,13 @@ while True:
             if tahmin == kelime:
                 print("Kazandınız!!!")
                 break
-            elif cevap == "H":
-                tahminSayisi -= 1
-                print("Yanlış tahmin ettiniz. {} tane tahmin hakkınız kaldı.".format(tahminSayisi))
-            else:
-                continue
+        elif cevap == "H":
+            tahminSayisi -= 1
+            print("Yanlış tahmin ettiniz. {} tane tahmin hakkınız kaldı.".format(tahminSayisi))
+        else:
+            print("Lütfen sadece evet için E, hayır için H harflerini giriniz!")
+            continue
+        
     tekoyun = input("Tekrar Oyanamak İster Misiniz? (e/h):" )          
     if "e" == tekoyun :
         False
@@ -112,5 +114,5 @@ while True:
         True
         break
     else:
-        print("Lütfen sadece evet için e, hayır için h harflerini giriniz")
+        print("Lütfen sadece evet için e, hayır için h harflerini giriniz!")
         break
