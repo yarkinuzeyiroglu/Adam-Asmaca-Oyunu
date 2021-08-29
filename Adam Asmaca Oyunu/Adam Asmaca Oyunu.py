@@ -9,7 +9,7 @@ while True:
     print("---------- Adam Asmaca Oyunu ----------")
     print(' '.join(z), end='\n') #Alt tireler arasına boşluk ekliyoruz.
     while tahminSayisi > 0:
-        y = input("Bir harf tahmin edin : ")
+        y = input("Bir harf tahmin edin (Lütfen tüm harfleri küçük harfle yazınız!): ")
         if y in harfler:
             print("Lütfen daha önce tahmin ettiğiniz harfleri tekrar tahmin etmeyin!")
             continue
@@ -96,7 +96,7 @@ while True:
                  break
         cevap = input("Kelimeyi buldunuz mu? ['E' veya 'H'] : ")#Kelimeyi her seferinde tahmin etme şansı tanıyoruz böylece kullanıcı kelimeyi bulursa direkt sona ulaşabilir.
         if cevap == "E":
-            tahmin = input("Tahmin ettiğiniz kelime: ")
+            tahmin = input("Tahmin ettiğiniz kelime (Lütfen tüm harfleri küçük harfle yazınız!): ")
             if tahmin == kelime:
                 print("Kazandınız!!!")
                 break
