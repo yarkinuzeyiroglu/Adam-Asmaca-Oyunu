@@ -100,9 +100,11 @@ while True:
             if tahmin == kelime:
                 print("Kazandınız!!!")
                 break
+            else:
+                tahminSayisi -= 1
+                print("Yanlış tahmin ettiniz. {} tane tahmin hakkınız kaldı.".format(tahminSayisi))
         elif cevap == "H":
-            tahminSayisi -= 1
-            print("Yanlış tahmin ettiniz. {} tane tahmin hakkınız kaldı.".format(tahminSayisi))
+            continue
         else:
             print("Lütfen sadece evet için E, hayır için H harflerini giriniz!")
             continue      
